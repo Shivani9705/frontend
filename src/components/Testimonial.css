@@ -1,0 +1,112 @@
+.testimonials {
+  width: 90%;
+  margin: 60px auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.testimonials .heading h2 {
+  font-size: 32px;
+  color: #0C2D6B;
+  font-weight: 600;
+}
+
+.testimonials .heading p {
+  margin: 10px 0 30px;
+  font-size: 16px;
+  color: gray;
+}
+
+/* Flex layout for two columns */
+.testimonial-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+/* LEFT SIDE */
+.left-box {
+  flex: 1;
+}
+
+.quote-box {
+  padding: 40px;
+  border: 6px solid #FF3E54;
+  /* border-top: none; */
+
+  border-right: none;
+  max-width: 600px;
+}
+
+.quote {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.author-pic {
+  width: 40px;
+  height: 40px;
+  background-color: #FF3E54;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.author-info h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.author-info span {
+  font-size: 14px;
+  color: gray;
+}
+
+/* Navigation buttons */
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-buttons button {
+  padding: 8px 12px;
+  border: 1px solid #FF3E54;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.nav-buttons button:hover {
+  background-color: #FF3E54;
+  color: white;
+}
+
+/* RIGHT SIDE */
+.right-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-frame {
+  border: 6px solid #FF3E54;
+  /* border-bottom: none; */
+  border-left: none;
+  padding: 20px;
+  width: fit-content;
+}
+
+.image-frame img {
+  width:100px;
+  height: auto;
+  border-radius: 5px;
+}

@@ -1,0 +1,155 @@
+/* ------------------------------
+   FOOTER CONTAINER
+------------------------------ */
+.footer {
+  padding: 40px 80px;
+  background: #fff;
+  color: #000;
+  border-top: 1px solid #ddd;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Top section layout */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* ------------------------------
+   LEFT SECTION (logo + input)
+------------------------------ */
+.footer-left {
+  flex: 1;
+  max-width: 350px;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-left p {
+  margin-top: 15px;
+  line-height: 1.4;
+}
+
+/* Newsletter input box */
+.newsletter {
+  display: flex;
+  margin-top: 15px;
+}
+
+.newsletter input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  border: none;
+  background: #e63946;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+/* Small privacy text */
+.footer-left small {
+  margin-top: 10px;
+  display: block;
+  font-size: 12px;
+  color: #555;
+}
+
+/* ------------------------------
+   COLUMNS (Links + Resources + Social)
+------------------------------ */
+.footer-links,
+.footer-resources,
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 150px;
+}
+
+.footer-links h4,
+.footer-resources h4,
+.footer-social h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-links a,
+.footer-resources a,
+.footer-social a {
+  color: #000;
+  font-size: 15px;
+  text-decoration: none;        /* remove underline */
+}
+
+.footer-social a svg {
+  margin-right: 8px;
+}
+
+/* ------------------------------
+   BOTTOM COPYRIGHT SECTION
+------------------------------ */
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.bottom-links {
+  display: flex;
+  gap: 20px;
+}
+
+.bottom-links a {
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;       /* no underline */
+}
+
+/* ------------------------------
+   RESPONSIVE
+------------------------------ */
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 20px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-left {
+    max-width: 100%;
+  }
+
+  .bottom-links {
+    margin-top: 10px;
+  }
+}
